@@ -101,7 +101,7 @@ company6 = '   Coding For All      '.strip ()
 print(company6)
 
 #31.Which one of the following variables return True when we use the method isidentifier():
-print('30DaysOfPython'. isidentifier)
+print('30DaysOfPython'. isidentifier())
 print('thirty_days_of_python'. isidentifier())
 
 #32.The following list contains the names of some of python libraries:
@@ -109,4 +109,23 @@ company7 =  ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
 print('#'.join(company7))
 
 #33.Use the new line escape sequence to separate the following sentences
-print('I am enjoying this challenge.')
+print('I am enjoying this challenge.\nI just wonder what is next')
+
+#34.Use a tab escape sequence to write the following lines.
+print('name \t\tAge\t\tCountry\t\tcity\t\tsebeneh\t\t350\t\Findland\t\tHelsinki')
+
+#35.Use the string formatting method to display the following:
+radius = 10
+area = 3.14 * radius ** 2
+print('The area of a circle with radius 10 is 314 meters square')
+
+#36.Make the following using string formatting methods:
+a = 8
+b = 6
+print(8 + 6)
+print(8 - 6)
+print(8 * 6)
+print(8 / 6)
+print(8 % 6)
+print(8 // 6)
+print(8 ** 6)
