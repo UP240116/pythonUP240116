@@ -2,19 +2,19 @@
 dog = {}
 
 #2.Add name, color, breed, legs, age to the dog dictionary
-dog={'name':'Max', 'color':'Brown', 'breed':'Labrador','legs': '4', 'age':'3'}
+dog={'name':'Toribio', 'color':'Brown', 'breed':'Dalmata','legs': '4', 'age':'3'}
 print("Diccionario dog:", dog)
 #3.Create a student dictionary and add first_name, last_name, gender, age, marital status, skills, country, city and address as keys for the dictionary
 student = {
-    'first_name': 'Juan',
-    'last_name': 'Pérez',
+    'first_name': 'Sebastián',
+    'last_name': 'Durón',
     'gender': 'Male',
-    'age': 25,
+    'age': 27,
     'marital_status': 'Single',
     'skills': ['Python', 'JavaScript', 'SQL'],
     'country': 'México',
-    'city': 'Ciudad de México',
-    'address': 'Calle Principal 123'
+    'city': 'Aguascalientes',
+    'address': 'Avenida poliducto #309'
 }
 print("\nDiccionario student:", student)
 #4.Get the length of the student dictionary
