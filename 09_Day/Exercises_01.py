@@ -24,4 +24,14 @@ elif my_age > your_age:
 else:
     print("We are the same age!")
 
-#3.
+#3.Get two numbers from the user using input prompt.
+a = float(input("Enter number one: "))
+b = float(input("Enter number two: "))
+
+
+if a > b:
+    print(f"{a} is greater than {b}")
+elif a < b:
+    print(f"{a} is smaller than {b}")
+else:
+    print(f"{a} is equal to {b}")
