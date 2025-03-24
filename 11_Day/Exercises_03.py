@@ -44,37 +44,37 @@ print(is_valid_python_variable("class"))
 from collections import Counter
 from countries_data import countries_d 
 
-# 1. Function to check if a number is prime
+# 1. --------------------------------------------------------
 def is_prime(n):
-    if n <= 1:  # Prime numbers are greater than 1
+    if n <= 1: 
         return False
     for i in range(2, int(n ** 0.5) + 1):
         if n % i == 0:
             return False
     return True
 
-# 2. Function to check if all items are unique in a list
+# 2. ------------------------------------------------------
 def all_items_unique(lst):
     return len(lst) == len(set(lst))
 
-# 3. Function to check if all items of the list are of the same data type
+# 3.------------------------------------------------------
 def all_items_same_type(lst):
-    if len(lst) < 2:  # A list with 0 or 1 item always has the same type
+    if len(lst) < 2:  
         return True
     first_type = type(lst[0])
     return all(isinstance(item, first_type) for item in lst)
 
-# 4. Function to check if a provided variable is a valid Python variable
+# 4. -------------------------------------------------
 def is_valid_python_variable(var):
     if var.isidentifier() and not keyword.iskeyword(var):
         return True
     return False
 
-# 5. Function to get the most spoken languages in the world (from a data file)
+# 5. --------------------------------------------
 def most_spoken_languages_in_the_world(n=10):
     language_count = {}
     
-    # Count occurrences of each language
+    
     for country in countries:
         language = country["language"]
         if language in language_count:
@@ -82,16 +82,16 @@ def most_spoken_languages_in_the_world(n=10):
         else:
             language_count[language] = 1
 
-    # Sort languages by count in descending order
+   
     sorted_languages = sorted(language_count.items(), key=lambda x: x[1], reverse=True)
     
-    # Return top n languages
+  
     return sorted_languages[:n]
 
-# 6. Function to get the most populated countries (from a data file)
+#------------------------------------------
 def most_populated_countries(n=10):
-    # Sort countries by population in descending order
+   
     sorted_countries = sorted(countries, key=lambda x: x["population"], reverse=True)
     
-    # Return top n populated countries
+   
     return sorted_countries[:n]
