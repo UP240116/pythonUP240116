@@ -42,7 +42,7 @@ print(is_valid_python_variable("class"))
 #Create a function called the most_populated_countries. It should return 10 or 20 most populated countries in descending order.
 
 from collections import Counter
-from countries_data import countries_d 
+from countries_data import countries 
 
 #  --------------------------------------------------------
 def is_prime(n):
