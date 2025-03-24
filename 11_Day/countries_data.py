@@ -1,4 +1,4 @@
-countries = [
+countries = str[
     {
         "name": "Afghanistan",
         "capital": "Kabul",
