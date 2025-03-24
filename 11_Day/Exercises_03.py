@@ -44,7 +44,7 @@ print(is_valid_python_variable("class"))
 from collections import Counter
 from countries_data import countries_d 
 
-# 1. --------------------------------------------------------
+#  --------------------------------------------------------
 def is_prime(n):
     if n <= 1: 
         return False
@@ -53,24 +53,24 @@ def is_prime(n):
             return False
     return True
 
-# 2. ------------------------------------------------------
+#  ------------------------------------------------------
 def all_items_unique(lst):
     return len(lst) == len(set(lst))
 
-# 3.------------------------------------------------------
+# ------------------------------------------------------
 def all_items_same_type(lst):
     if len(lst) < 2:  
         return True
     first_type = type(lst[0])
     return all(isinstance(item, first_type) for item in lst)
 
-# 4. -------------------------------------------------
+# -------------------------------------------------
 def is_valid_python_variable(var):
     if var.isidentifier() and not keyword.iskeyword(var):
         return True
     return False
 
-# 5. --------------------------------------------
+#  --------------------------------------------
 def most_spoken_languages_in_the_world(n=10):
     language_count = {}
     
